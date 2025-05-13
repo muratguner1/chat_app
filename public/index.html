@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    <title>Chat app</title>
+</head>
+<body>
+    <h1>MyChat 💬</h1>
+    <div class="main">
+        <div class="name">
+            <span><i class="far fa-user"></i></span>
+            <input type="text" id="name-input" class="name-input" value="anonymous" maxlength="20">
+        </div>
+
+        <ul class="message-container" id="message-container">
+            <li class="message-left">
+                <p class="message">
+                    lorem impsun
+                    <span>bluebird ● 26 July 10:40</span>
+                </p>
+            </li>
+            <li class="message-right">
+                <p class="message">
+                    lorem impsun
+                    <span>bluebird ● 26 July 10:40</span>
+                </p>
+            </li>
+            <li class="message-feedback">
+                <p class="feedback" id="feedback">
+                    murat is typing a message
+                </p>
+            </li>
+        </ul>
+        
+        <form class="message-form" id="message-form">
+            <input type="text" name="message" id="message-input" class="message-input">
+            <div class="v-divider">
+                <button type="submit" class="send-button">send <span><i class="fas fa-paper-plane"></i></span></button>
+            </div>
+        </form>
+
+        <h3 class="clients-total" id="clients-total">Total clients: 2</h3>
+    </div>
+</body>
+</html>
